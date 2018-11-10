@@ -1,0 +1,12 @@
+.profile {
+  height: auto;
+  max-height: 200px;
+}
+
+.logo {
+  height: 64px;
+}
+
+.newshunt {
+  background-image: url("../img/projects/newshunt/main.jpg") !important;
+}
