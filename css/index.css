@@ -7,6 +7,26 @@
   height: 64px;
 }
 
+.actualize {
+  background-image: url("../img/projects/actualize/main.jpg") !important;
+}
+
+.createopportunity {
+  background-image: url("../img/projects/createopportunity/main.jpg") !important;
+}
+
 .newshunt {
   background-image: url("../img/projects/newshunt/main.jpg") !important;
+}
+
+.portfolio {
+  background-image: url("../img/projects/portfolio/main.jpg") !important;
+}
+
+.primemeals {
+  background-image: url("../img/projects/primemeals/main.jpg") !important;
+}
+
+.talentstack {
+  background-image: url("../img/projects/talentstack/main.jpg") !important;
 }
