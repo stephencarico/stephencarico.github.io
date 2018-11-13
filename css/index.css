@@ -30,3 +30,8 @@
 .talentstack {
   background-image: url("../img/projects/talentstack/main.jpg") !important;
 }
+
+.container .thumbnail {
+  max-height: 100%;
+  max-width: 100%;
+}
