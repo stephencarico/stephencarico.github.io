@@ -118,15 +118,25 @@
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-heading">Overview</h2>
                     <hr class="my-4">
-                    <br>
                 </div>
             </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 text-center">
+                <img src="../img/projects/newshunt/home.png" alt="" class="thumbnail">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="text-center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+            <br>
             <div class="row">
               <div class="col-lg-6 col-md-6 text-center">
                 <img src="../img/projects/newshunt/home-mobile.png" alt="" class="thumbnail">
               </div>
               <div class="col-lg-6 col-md-6 text-center">
-                <br>
                 <p>Starting with the navigation bar, you can see which site APIs we decided to pull from. With v-on:click handeling, our site would send a GET request to the targeted API, reformat the information, and load the retrieved Posts as cards within a load time of 560ms on average.</p>
                 <p>Our ALL tab started with a load time averaging 4.5 seconds, before we were able to target a specific API that was causing the significant delay, which we were able to refactor and bring down to an average of 2 seconds.</p>
                 <p>Our goal is to optimize this rendering even further, by updating our back-end logic to have our server store the results of periodic GET requests in the background so that instead of submittting four GET requests to multiple APIs at the time of the user's click handeling, our front-end would simply make one request to our server, thus reducing our loadtime.</p>
@@ -135,7 +145,6 @@
             <br>
             <div class="row">
               <div class="col-lg-6 col-md-6 text-center">
-                <br>
                 <p>We built in some very simple login/signup functionality, where a user can create an account by providing only an email address and a desired password.</p>
                 <p>Once logged in, the user then has the ability to add posts to their bookmarks for future reading by clicking the gray 'plus' icons found on each Post card.</p>
                 <p>This feature was simple to design in the back-end, where there was a database table for Users and Bookmarks with a has-many / belongs-to relationship.</p>
@@ -145,11 +154,9 @@
                 <img src="../img/projects/newshunt/login.png" alt="" class="thumbnail">
               </div>
             </div>
-            <br>
-            <div class="row">
-              <div class="col-lg-12 col-md-12 text-center">
-                <img src="../img/projects/newshunt/home.png" alt="" class="thumbnail">
-              </div>
+            <br><br>
+            <div class="container text-center signature">
+              <a class="btn btn-light btn-xl sr-button" href="" target="_blank"><i class="fab fa-github"></i> View Code</a>
             </div>
         </div>
 
