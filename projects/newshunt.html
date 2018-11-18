@@ -71,8 +71,7 @@
                   <div class="col-lg-8 mx-auto text-center">
                       <h2 class="section-heading text-white">Brief Summary</h2>
                       <hr class="light my-4">
-                      <p class="text-faded mb-4">News-Hunt is a single-page application that pulls trending posts from a series of external news sources using API REST calls.</p>
-                      <p class="text-faded mv-4">For users, it's a one stop shop to discover trending posts from Hacker News, Reddit, Product Hunt, and GitHub Trending. For an optimized experience, a user can sign up and start bookmarking their favorite posts to save for later.</p>
+                      <p class="text-faded mb-4">News-Hunt is a single-page application that pulls trending posts from a series of external news sources using API REST calls, developed by myself and programming partner <a href="https://github.com/robdrosenberg" target="_blank" style="color: white">Robert Rosenberg</a>.</p>
                   </div>
               </div>
           </div>
@@ -118,6 +117,7 @@
                     <hr class="my-4">
                 </div>
             </div>
+            <br>
             <div class="row">
               <div class="col-lg-12 col-md-12 text-center">
                 <img src="../img/projects/newshunt/home.png" alt="" class="thumbnail">
@@ -126,27 +126,27 @@
             <br>
             <div class="row">
               <div class="text-center">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Starting with the navigation bar, you can see which site APIs we decided to pull from. With on-click handeling, our site would send a GET request to the targeted API, reformat the information, and load the retrieved Posts as cards within an average load time of 560ms. Of course though, some API requests took longer than others, which would affect our home page load time, which featured ALL posts. </p>
               </div>
             </div>
             <br>
             <div class="row">
-              <div class="col-lg-6 col-md-6 text-center">
+              <div class="col-lg-8 col-md-6 text-center">
                 <img src="../img/projects/newshunt/home-mobile.png" alt="" class="thumbnail">
               </div>
-              <div class="col-lg-6 col-md-6 text-center">
-                <p>Starting with the navigation bar, you can see which site APIs we decided to pull from. With v-on:click handeling, our site would send a GET request to the targeted API, reformat the information, and load the retrieved Posts as cards within a load time of 560ms on average.</p>
-                <p>Our ALL tab started with a load time averaging 4.5 seconds, before we were able to target a specific API that was causing the significant delay, which we were able to refactor and bring down to an average of 2 seconds.</p>
-                <p>Our goal is to optimize this rendering even further, by updating our back-end logic to have our server store the results of periodic GET requests in the background so that instead of submittting four GET requests to multiple APIs at the time of the user's click handeling, our front-end would simply make one request to our server, thus reducing our loadtime.</p>
+              <div class="col-lg-4 col-md-6 text-center">
+                <p>With our first draft, our ALL request had an average load time of 4.5 seconds, which is terrible for any user experience. We therefore fixed this issue by targeting the specific API that was causing the significant delay, refactoring how we were sending the request and pulling the information, thus bringing down the load time to a new average of 2 seconds.</p>
+                <p>Our goal however is to optimize this rendering even further. By updating our back-end logic to have our server store the results of periodic GET requests in the background, we could transition away from submitting multiple GET requests to multiple APIs at the time of the user's click handeling. Instead, our front-end would simply make one request to our server, thus reducing the page's loadtime.</p>
+                <p>The features we added to the Post cards were hyperlinks to the pages where the post or comment thread originated. Plus we included with each card the source of the post, how many points, if any, the post had, and who the author was. However, we do not load the full content internally on our platform; News-Hunt simply links our users directly to the original sources.</p>
               </div>
             </div>
-            <br>
+            <br><br>
             <div class="row">
               <div class="col-lg-6 col-md-6 text-center">
-                <p>We built in some very simple login/signup functionality, where a user can create an account by providing only an email address and a desired password.</p>
-                <p>Once logged in, the user then has the ability to add posts to their bookmarks for future reading by clicking the gray 'plus' icons found on each Post card.</p>
-                <p>This feature was simple to design in the back-end, where there was a database table for Users and Bookmarks with a has-many / belongs-to relationship.</p>
-                <p>The challenging part of this implementation was connecting the front-end module to the back-end logging in and authenticating user functionality, which was then solved through plenty of trial-and-error programming.</p>
+                <p>To enhance our user experience, we included a signup/login feature that would only ask for an email address, password and password confirmation with the mentality that the less forms a user would have to fill out, the more likely they'll sign up.</p>
+                <p>Once logged in, the user would then have the ability to add posts to their bookmarks for future reading by clicking the gray 'plus' icons found on each Post card and clicking on the Boomkarks tab.</p>
+                <p>This feature was simple to design in the back-end, with a database table for Users and Bookmarks with a has-many / belongs-to relationship.</p>
+                <p>The challenging part of this implementation was setting up the login/signup functionality with user authentication. After reading a fair amount of articles on authentication and designing a login module, we were able to integrate it into our code to keep the user experience fluid and back-end functioning properly.</p>
               </div>
               <div class="col-lg-6 col-md-6 text-center">
                 <img src="../img/projects/newshunt/login.png" alt="" class="thumbnail">
