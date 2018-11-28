@@ -39,3 +39,8 @@
 .overview {
   background-color: gray;
 }
+
+.skill {
+  height: 200px;
+  padding-bottom: 10px;
+}
