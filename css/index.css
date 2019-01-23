@@ -44,3 +44,24 @@
   height: 200px;
   padding-bottom: 10px;
 }
+
+#threadz-logo {
+  width: 30em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#threadz-logo:hover {
+  transform: scale(1.05);
+}
+
+.center {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+#reference-padding {
+  padding: 2em;
+}
