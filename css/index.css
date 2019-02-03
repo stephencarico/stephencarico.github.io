@@ -65,3 +65,25 @@
 #reference-padding {
   padding: 2em;
 }
+
+.newspaper {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
+
+.quote {
+    text-align: center;
+    font-style: italic;
+}
+
+.quote:before, .quote:after{
+    position: relative;
+    content: "";
+    width: 30%;
+    left: 35%;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+}
