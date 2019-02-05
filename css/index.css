@@ -52,6 +52,12 @@
   margin-right: auto;
 }
 
+@media screen and (min-device-width: 320px) and (orientation: portrait){
+  #threadz-logo {
+    width: 17em;
+  }
+}
+
 #threadz-logo:hover {
   transform: scale(1.05);
 }
