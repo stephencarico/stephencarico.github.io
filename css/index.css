@@ -144,3 +144,18 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.final-parallax {
+    /* The image used */
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1525153619385-b392c01cf467?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=932&q=80");
+
+  /* Set a specific height */
+  min-height: 20em; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
