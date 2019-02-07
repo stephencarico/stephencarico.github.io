@@ -48,9 +48,19 @@
 #threadz-logo {
   width: 30em;
   display: block;
+  position: absolute;
+  top: 50%;
+  height: : 100%;
+  margin-top: -5%;
+  margin-left: 20%;
+}
+
+/*#threadz-logo {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-}
+  vertical-align: middle;
+}*/
 
 @media screen and (min-device-width: 320px) and (orientation: portrait){
   #threadz-logo {
@@ -63,9 +73,13 @@
 }
 
 .center {
-  margin: auto;
-  width: 100%;
-  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pikachu {
+  max-height: 7em;
 }
 
 #reference-padding {
@@ -92,4 +106,41 @@
     margin-bottom: 10px;
     margin-top: 10px;
     border-bottom: 1px solid white;
+}
+
+.masthead {
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.threadz-parallax {
+  /* The image used */
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1549399541-54e16138e7ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+
+  /* Set a specific height */
+  min-height: 20em; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ts-parallax {
+  /* The image used */
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=924&q=80");
+
+  /* Set a specific height */
+  min-height: 20em; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
