@@ -45,7 +45,7 @@
   padding-bottom: 10px;
 }
 
-#threadz-logo {
+/*#threadz-logo {
   width: 30em;
   display: block;
   position: absolute;
@@ -53,18 +53,20 @@
   height: : 100%;
   margin-top: -5%;
   margin-left: 20%;
-}
-
-/*#threadz-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  vertical-align: middle;
 }*/
+
+#threadz-logo {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
 @media screen and (min-device-width: 320px) and (orientation: portrait){
   #threadz-logo {
-    width: 17em;
+    width: 20em;
   }
 }
 
@@ -121,7 +123,7 @@
   background-image: url("https://images.unsplash.com/photo-1549399541-54e16138e7ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
 
   /* Set a specific height */
-  min-height: 20em; 
+  min-height: 23em; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -136,7 +138,7 @@
   background-image: url("https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=924&q=80");
 
   /* Set a specific height */
-  min-height: 20em; 
+  min-height: 23em; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
