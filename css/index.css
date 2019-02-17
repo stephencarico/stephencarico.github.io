@@ -7,28 +7,8 @@
   height: 64px;
 }
 
-.actualize {
-  background-image: url("../img/projects/actualize/header.jpg") !important;
-}
-
-.createopportunity {
-  background-image: url("../img/projects/createopportunity/main.jpg") !important;
-}
-
-.newshunt {
-  background-image: url("../img/projects/newshunt/header.jpg") !important;
-}
-
-.portfolio {
-  background-image: url("../img/projects/portfolio/main.jpg") !important;
-}
-
-.primemeals {
-  background-image: url("../img/projects/primemeals/main.jpg") !important;
-}
-
-.talentstack {
-  background-image: url("../img/projects/talentstack/main.jpg") !important;
+.pop:hover {
+  transform: scale(1.05)
 }
 
 .container .thumbnail {
@@ -45,19 +25,10 @@
   padding-bottom: 10px;
 }
 
-/*#threadz-logo {
-  width: 30em;
-  display: block;
-  position: absolute;
-  top: 50%;
-  height: : 100%;
-  margin-top: -5%;
-  margin-left: 20%;
-}*/
-
-#threadz-logo {
+#project-logo {
   position: absolute;
   margin: auto;
+  padding-top: 5em;
   top: 0;
   left: 0;
   right: 0;
@@ -65,13 +36,15 @@
 }
 
 @media screen and (min-device-width: 320px) and (orientation: portrait){
-  #threadz-logo {
-    width: 20em;
+  #project-logo {
+    padding-top: 3em;
+    width: 25em;
   }
 }
 
-#threadz-logo:hover {
-  transform: scale(1.05);
+#project-logo:hover {
+  transform: scale(1.1);
+  /*transition: 0.3s cubic-bezier(0.61,-0.19, 0.7,-0.11);*/
 }
 
 .center {
@@ -80,8 +53,12 @@
   margin-right: auto;
 }
 
-#pikachu {
+#guitar {
   max-height: 7em;
+}
+
+#xl {
+  padding: 1.4em;
 }
 
 #reference-padding {
